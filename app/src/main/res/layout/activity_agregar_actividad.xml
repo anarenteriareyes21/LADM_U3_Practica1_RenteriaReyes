@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AgregarActividadActivity"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Agregar Actividades"
+        android:textColor="#0B0B0B"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Descripción:"
+        android:textColor="#101010"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/editDescri"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Escriba la descripción de la actividad" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fecha de Captura"
+        android:textColor="#090909"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/editFechaCaptura"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Seleccione la fecha"
+        android:focusable="false"/>
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fecha de entrega:"
+        android:textColor="#0C0C0C"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/editFechaEntrega"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Seleccione la fecha"
+        android:focusable="false"/>
+
+    <Button
+        android:id="@+id/btnInsertarActividad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="INSERTAR ACTIVIDAD" />
+
+    <Button
+        android:id="@+id/btnAgregarEvidencia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Agregar Evidencia" />
+</LinearLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".BuscarActivity">
+
+    <TextView
+        android:id="@+id/textViewBuscar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Buscar actividades por:"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/editBuscarPor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Escriba lo que desea buscar" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/radioEntrega"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fecha de entrega" />
+
+        <RadioButton
+            android:id="@+id/radioCaptura"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fecha de captura" />
+
+        <RadioButton
+            android:id="@+id/radioID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ID " />
+
+        <RadioButton
+            android:id="@+id/radioTodos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mostrar todos" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnBuscar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Buscar" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="Actividades disponibles"
+        android:textColor="#121111"
+        android:textSize="16sp" />
+
+    <ListView
+        android:id="@+id/lista"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp" />
+</LinearLayout>
